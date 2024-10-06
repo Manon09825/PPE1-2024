@@ -1,1 +1,2 @@
 # Journal de bord du projet encadré
+## 06 octobre: test des fonctions git, création du journal de bord. J'ai eu quelques difficultés à comprendre le fonctionnement du github, mais il me semble avoir finalement réussi à faire ce qui était demandé. Après avoir créé le journal j'ai réussi à obtenir de git status la même réponse que dans l'exercice 2 en utilisant les commandes git fetch et git pull. En revanche je n'ai pas compris comment ajouter des modifications au journal autrement que depuis Github.
