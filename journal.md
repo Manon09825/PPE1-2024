@@ -35,3 +35,16 @@ C'est rigolo.
 Cette ligne doit rester après correction.
 =======
 >>>>>>> parent of 4a8aeae (I AM ERROR)
+
+## copie du fichier oups.md
+Exercice 3:
+- Je ne suis pas sûre d'avoir compris l'exercice.
+
+- Mais j'essaye quand même, on verra bien.
+
+- J'utilise un `git reset --soft` pour revenir à la dernière version du dépôt sans annuler le staging.
+
+## retour dans le journal de bord normal:
+J'ai fait un `git reset --soft HEAD^` pour défaire les commits pas encore poussés sur le fichier oups.md mais je ne suis pas sûre d'avoir vu la différence, après avoir fait le reset j'arrivais toujours à ouvrir le fichier et y voir les lignes que j'avais ajoutées avant de faire le reset.
+
+Je ne suis pas non plus sûre d'avoir réussi à défaire le commit que j'avais poussé sur le journal. J'ai utilisé les commandes `git log` pour avoir accès à l'identifiant SHA du commit au message I AM ERROR et `git revert` pour le défaire, mais je vois que les lignes sont toujours inscrites dans le journal, et je n'arrive pas à comprendre si c'est normal ou pas.
