@@ -28,3 +28,5 @@ La commande m'a donné en premier le nombre de lignes, puis le nombre de caract�
 
 # Séance 3
 ## exercices git
+Voici quelques lignes bidons.
+C'est rigolo.
