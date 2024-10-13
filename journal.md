@@ -27,7 +27,7 @@ La commande m'a donné en premier le nombre de lignes, puis le nombre de caract�
 - Une fois le classement des lieux par année effectué, j'ai eu moins de mal à faire l'exercice de classement par mois, puisque j'avais déjà résolu les problèmes que j'avais eus pour classer et j'avais plus ou moins réussi à comprendre comment fonctionnaient les nouvelles commandes. J'ai d'abord essayé de chercher dans tous les fichiers des 3 années en même temps, en tapant `cat 20??_09*` (pour le mois de septembre) mais la commande n'a pas pu être effectuée car aucun fichier de ce nom ne se trouvait directement dans le dossier ann. J'ai suis donc allée chercher les informations dont j'avais dans les 3 dossiers chacun leur tour. J'ai ensuite utilisé les mêmes commandes que pour l'exercice 2.a, en remplaçant `cat *.ann` par `cat 2016_09*`, `cat 2017_09*` ou `cat 2018_09*` pour que seuls les fichiers du mois de septembre ne soient pris en compte.
 
 # Séance 3
-## exercices git
+## exercices git   correction d'erreurs
 <<<<<<< HEAD
 Voici quelques lignes bidons.
 C'est rigolo.
