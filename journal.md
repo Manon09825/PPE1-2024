@@ -50,3 +50,5 @@ J'ai fait un `git reset --soft HEAD^` pour défaire les commits pas encore pouss
 Je ne suis pas non plus sûre d'avoir réussi à défaire le commit que j'avais poussé sur le journal. J'ai utilisé les commandes `git log` pour avoir accès à l'identifiant SHA du commit au message I AM ERROR et `git revert` pour le défaire, mais je vois que les lignes sont toujours inscrites dans le journal, et je n'arrive pas à comprendre si c'est normal ou pas.
 
 Je vais mettre cette ligne de côté.
+
+- Pour résoudre le conflit, après avoir modifié le même fichier en ligne et sur la version locale, il fallait mettre les modifications de côté grâce à un `git stash push` le temps de récupérer les modifications présentes sur la version en ligne (grâce à un `git pull`), puis faire un `git stash apply` pour appliquer les modifications sur la version locale.
