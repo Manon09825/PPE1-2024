@@ -30,3 +30,5 @@ La commande m'a donné en premier le nombre de lignes, puis le nombre de caract�
 ## exercices git
 Voici quelques lignes bidons.
 C'est rigolo.
+
+Cette ligne doit rester après correction.
