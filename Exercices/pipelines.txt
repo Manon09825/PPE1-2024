@@ -1,3 +1,15 @@
-Exercices 1.a: `cd exercice1/ann/2016` puis  `cat *.ann|wc>comptes.txt`
+Exercices 1.a:
+- Dans exercice1/ann/2016: `cat *.ann | wc > comptes.txt`
+- Dans exercice1/ann/2017: `cat *.ann | wc >> comptes.txt`
+- Dans exercice1/ann/2018: `cat *.ann | wc >> comptes.txt`
 
-Exercice 1.b: `cd exercice1/ann/2016` puis `cat *.ann|grep "Location"|wc>locations.txt`
+Exercice 1.b:
+- Dans exercice1/ann/2016: `cat *.ann | grep "Location" | wc > locations.txt`
+- Dans exercice1/ann/2017: `cat *.ann | grep "Location" | wc >> locations.txt`
+- Dans exercice1/ann/2017: `cat *.ann | grep "Location" | wc >> locations.txt`
+
+Exercice 2.a:
+- Dans exercice1/ann/2016: `cat *.ann | grep "Location" | cut -f3 | sort | uniq -c | sort -n | tail -n 15 > classement_2016.txt`
+- Dans exercice1/ann/2017: `cat *.ann | grep "Location" | cut -f3 | sort | uniq -c | sort -n | tail -n 15 > classement_2017.txt`
+- Dans exercice1/ann/2018: `cat *.ann | grep "Location" | cut -f3 | sort | uniq -c | sort -n | tail -n 15 > classement_2018.txt`
+
