@@ -48,3 +48,5 @@ Exercice 3:
 J'ai fait un `git reset --soft HEAD^` pour défaire les commits pas encore poussés sur le fichier oups.md mais je ne suis pas sûre d'avoir vu la différence, après avoir fait le reset j'arrivais toujours à ouvrir le fichier et y voir les lignes que j'avais ajoutées avant de faire le reset.
 
 Je ne suis pas non plus sûre d'avoir réussi à défaire le commit que j'avais poussé sur le journal. J'ai utilisé les commandes `git log` pour avoir accès à l'identifiant SHA du commit au message I AM ERROR et `git revert` pour le défaire, mais je vois que les lignes sont toujours inscrites dans le journal, et je n'arrive pas à comprendre si c'est normal ou pas.
+
+Je vais mettre cette ligne de côté.
