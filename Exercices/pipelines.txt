@@ -16,5 +16,5 @@ Exercice 2.a:
 Exercice 2.b:
 - Dans exercice1/ann/2016: `cat 2016_09* | grep "Location" | cut -f3 | sort | uniq -c | sort -n | tail -n 15 > ../../../PPE1-2024_2/Exercices/classement_septembre.txt`
 - Dans exercice1/ann/2017: `cat 2017_09* | grep "Location" | cut -f3 | sort | uniq -c | sort -n | tail -n 15 >> ../../../PPE1-2024_2/Exercices/classement_septembre.txt`
-- Dans exercice1/ann/2018: `cat 2018_09* | grep "Location" | cut -f3 | sort | uniq -c | sort -n | tail -n 15 >> ../../../PPE1-2024_2/Exercices/classement_septembre.txt
+- Dans exercice1/ann/2018: `cat 2018_09* | grep "Location" | cut -f3 | sort | uniq -c | sort -n | tail -n 15 >> ../../../PPE1-2024_2/Exercices/classement_septembre.txt`
 
