@@ -1,1 +1,3 @@
+Exercices 1.a: `cd exercice1/ann/2016` puis  `cat *.ann|wc`
 
+Exercice 1.b: `cd exercice1/ann/2016` puis `cat *.ann|grep "Location"|wc`
