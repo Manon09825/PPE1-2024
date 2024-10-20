@@ -52,3 +52,21 @@ Je ne suis pas non plus sûre d'avoir réussi à défaire le commit que j'avais 
 Je vais mettre cette ligne de côté.
 
 - Pour résoudre le conflit, après avoir modifié le même fichier en ligne et sur la version locale, il fallait mettre les modifications de côté grâce à un `git stash push` le temps de récupérer les modifications présentes sur la version en ligne (grâce à un `git pull`), puis faire un `git stash apply` pour appliquer les modifications sur la version locale.
+
+## 20 octobre:
+- Explication du code (p43 diapo 00unix):
+Le programme commence par spécifier qu'il demande un argument; si le nombre d'arguments donnés n'est pas 1, le programme ne s'exécute pas.
+
+On lance une boucle `while` qui lit des lignes. Si la ligne lue par le programme commence par "https://" ou "http://", alors le pogramme renvoie la réponse "la ligne [nom de la ligne] ressemble à une URL valide", et on rajoute 1 à la valeur de la variable OK (à laquelle on avait d'abord donné la valeur de 0). Si la ligne ne commence pas par "https://" ou "http://" alors le programme renvoie "la ligne [nom de la ligne] ne ressemble pas à une URL valide", et on ajoute 1 à la valeur de la variable NOK.
+
+Une fois la boucle terminée, on assigne le résultat à la variable FICHIER_URLS. Enfin, le programme renvoie comme résultat une phrase qui donne le nombre de lignes qui sont des URLs et le nombre de lignes qui sont "douteuses" (grâce aux variables OK et NOK qui correspondent respectivement au nombre d'URLs et de lignes douteuses).
+
+- Pour les exercices 1 et 2 des exercices de script, j'ai commencé sans boucle, en répétant 3 fois le même programme en changeant juste l'année. J'ai utilisé les mêmes commandes que pour l'exercices des pipelines, mais j'ai dû faire quelques changements: notamment créer un fichier dans lequel stocker les informations récupérées par la commande grep, pour pouvoir ensuite utiliser la commande wc (qui ne fonctionne que sur des fichiers, et qui n'affichait donc aucun résultat quand on ne mettait pas d'abord les lignes dans un fichier).
+J'ai ensuite créé des boucles `for` pour que le programme soit plus court. `for an in 2016 2017 2018` permet d'éxecuter le programme une fois pour l'année 2016, puis pour l'année 2017 et enfin pour l'année 2018 sans avoir à l'écrire 3 fois.
+
+J'ai utilisé les variables `$1` et `$2` pour l'exercice 2.a, pour que l'année et le type d'entités soient donnés manuellement en argument du programme. Grâce à l'option `-l` de la commande `wc`, seul le nombre de lignes (donc d'annotations) est affiché.
+Grâce à la commande `echo`, on peut produire des fichiers semblables à ceux des exercices précédents (pipelines).
+
+- Pour l'exercice sur le compte des lieux, je n'ai pas réussi à faire autrement que de créer 5 nouveaux fichiers, chaque fois que j'avais une opération à effectuer, car les commandes dont j'avais besoin ne fonctionnaient que sur des fichiers. Après avoir utilisé `grep` pour extraire les lignes qui contenaient des lieux, j'ai créé un fichier "comptelieux.txt" dans lequel j'ai mis les données. Pour n'avoir que le 3ème champ (donc le nom des lieux), j'ai utilisé `cut` à partir du fichier "comptelieux.txt", mais j'ai dû stocker les résultats de cette commande dans un nouveau fichier; j'ai essayé de les mettre dans le même fichier ("comptelieux.txt") en écrasant les données qui étaient déjà dedans pour ne pas avoir à créer un nouveau fichier à chaque fois mais le programme ne donnait aucun résultat, alors je n'ai pas trouvé d'autre solution que de créer un fichier à chaque commande que j'utilisais (à savoir, après `grep` et `cut`, `sort`, `uniq`, `sort` et `tail`).
+
+- Après avoir plus ou moins obtenu de mes scripts les résultats attendus, j'ai fait des git add, git commit et git push, puis j'ai créé le tag et je l'ai poussé.
